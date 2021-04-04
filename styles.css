@@ -1,3 +1,4 @@
+*{ outline: .1px solid #ff0000 !important; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,15 +47,183 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* =======RESET Ends============ */
 /* ================ Begin my CSS ============ */
-.container{
+.polar-top-section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: orange;
+    background-color: #FFFFFF;
+	
 }
-.logo{
-    width: 40px;
-    height: 40px;
-    margin: 5px;
+.logo {
+     max-width: 100%;
+    /*height: 40px;
+    margin: 5px; */
 }
+.hero-pic1{
+	max-width: 100%;
+	height: auto;
+}
+.three-pictures{
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+.timer-pictures-section{
+	display: flex;
+  /* flex-direction: column; */
+}
+/* ======My CSS Ends========== */
+
+/* =========== w3 school Auto Slider 3-Pictures START ========== */
+.mySlides1 {display: none;}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot1 { 
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.active1 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* =========== w3 school Auto Slider 3-Pictures END ========== */
+
+/* =========== w3 school testimonial slider START=========== */
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+	display: none;
+	padding: 80px;
+	text-align: center;
+  }
+  .stars{
+	 max-width: 100px;
+  }
+  .stars-quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+	  text-align: center;
+	  padding: 20px;
+	  background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+  /* =========== w3 school testimonial slider END=========== */
