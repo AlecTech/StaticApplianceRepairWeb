@@ -5,62 +5,73 @@
     <meta charset="utf-8"/>
     <meta name="author" content="Oleg Eremeev" />
     <title>
-        Appliances Repair
+        Calgary Appliances Repair
     </title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div class="polar-top-section">
-      <img class="logo" src="pictures/logo18.jpg" alt="logo" ></img>
-      <h2>
-          
-      </h2>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Washer</a>
-            <a class="dropdown-item" href="#">Dryer</a>
-            <a class="dropdown-item" href="#">Range</a>
-            <a class="dropdown-item" href="#">Dishwasher</a>
-            <a class="dropdown-item" href="#">Fridge</a>
-            <a class="dropdown-item" href="#">Microwave</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Installations</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="estimates-tab" data-toggle="tab" href="#estimates" role="tab" aria-controls="estimates" aria-selected="false">Estimates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="false">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-        </li>
-      </ul>
-        <!-- <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, deleniti distinctio libero impedit, dignissimos, vel quasi optio at quaerat ipsam voluptate sint ut ipsa qui totam? Quos voluptates nesciunt nulla.</div>
-        
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat alias architecto tenetur eius aut temporibus culpa ut nam! Impedit quod illum pariatur mollitia labore nesciunt beatae, excepturi odit magnam accusamus.</div>
-        </div> -->
+<!-- ====Bootstrap NavBar Responsive HTML Start======= -->
+<div class="polar-top-section">
+  <img class="logo" src="pictures/logo18.jpg" alt="logo" ></img> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse_target">  
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"> Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="services.html"> Services <span class="caret"></span></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown_target">
+              <a class="dropdown-item" href="services.html">Washer</a>
+              <a class="dropdown-item" href="services.html">Dryer</a>
+              <a class="dropdown-item" href="services.html">Range</a>
+              <a class="dropdown-item" href="services.html">Dishwasher</a>
+              <a class="dropdown-item" href="services.html">Fridge</a>
+              <a class="dropdown-item" href="services.html">Microwave</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="services.html">Installations</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="estimates.html"> Estimates </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Blog </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Contact Us </a>
+          </li>
+        </ul>    
     </div>
+  </nav>
+</div>
+ 
+<!-- ====Bootstrap NavBar Responsive HTML End======= -->
 
     <!-- Timer and 3-Pictures Section -->
-    <div class="timer-pictures-section">
+    <div class="timer-pictures-section" style="background-color:powderblue;">
       <div class="text-timer-book-now-gif">
         <h2>Take Advantage of Our Promotion. Book Now and get a 10% discount !</h2>
 
         <!--=============== w3 school Timer START JS =============-->
-        <p id="timer"></p>
+        <div class="timer-button">
+          <p id="timer"></p>
+          <a href="booknow.html">
+            <button class="btn btn-info" type="button" onclick="">Book Now</button>
+          </a>
+          
+        </div>
+       
         <script>
           // Set the date we're counting down to
-          var countDownDate = new Date("Apr 4, 2021 09:17:25").getTime();
+          var countDownDate = new Date("Apr 30, 2021 09:17:25").getTime();
           
           // Update the count down every 1 second
           var x = setInterval(function() {
@@ -90,11 +101,11 @@
           </script>
           <!--=============== w3 school Timer END JS =============-->
 
-          <button type="button" onclick="alert('Hello world!')">Book Now</button>
-          <img src="pictures/wave.gif" style="width:30%">
+          <img src="pictures/wave.gif" style="width:100%">
       </div>
       <div class="three-pictures">
-
+        <h2>Call Us to book appointment</h2>
+        <h3><img src="pictures/phone-square-alt-solid.svg" style="width: 20px;"></img>(403)973-8894</h3>
         <!--============= from W3 school automatic slideshow 3-Picture START HTML ==========-->
         <div class="slideshow-container1">
 
@@ -145,7 +156,7 @@
             }
             slides1[slideIndex1-1].style.display = "block";  
             dots1[slideIndex1-1].className += " active1";
-            setTimeout(showSlides1, 2000); // Change image every 2 seconds
+            setTimeout(showSlides1, 5000); // Change image every 2 seconds
           }
           </script>
           <!--=========== from W3 school automatic slideshow 3-Picture END JS ================-->
@@ -155,89 +166,129 @@
 
     <!-- Testimonial Section -->
     <div class="testimonial-section">
-      <h2>Testimonial</h2>
+      <h2 class="title-testimonial">Testimonial</h2>
 
       <!--============== w3 school Testimonial slider START HTML ===========-->
       <div class="slideshow-container">
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>I have had them out a couple of times for different issues and I am very pleased with the service.</q>
           </div>
-          <p class="author">- Chauncy Reggei</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Chauncy Reggei</p>
+          </div>
         </div>
         
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Good job! Friendly and knowledgeable.</q>
           </div>
-          <p class="author">- Timur Bulegenov</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Timur Bulegenov</p>
+          </div>
         </div>
         
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>I am berry happy is working like new!</q>
-          </div>   
-          <p class="author">- Purnimo Marero</p>
+          </div>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Purnimo Marero</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Used them a week ago and it was done quickly.</q>
           </div>
-          <p class="author">- Salah Ahdimado</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Salah Ahdimado</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>The tech had his mask and tools ready to work. Everything went as planned he was quick and answered my questions. Polite and friendly. Excellent work. Life's Good again.</q>
           </div>
-          <p class="author">- Darcy Brown</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Darcy Brown</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Glad I called them, no beating around the bush the guy knows what he is doing. Will recommend to my neighbours.</q>
           </div>
-          <p class="author">- James Coffin</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- James Coffin</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Tech was very accurate, he used coverings not scratch the floor and paid attention to our notes regarding noise level. We had a little one sleeping.</q>
           </div>
-          <p class="author">- Scott Styner</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Scott Styner</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Honest and professional approach. Very quick fix, glad they didn’t charge arm and a leg.</q>
           </div>
-          <p class="author">- Justin Church</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Justin Church</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>I had my dishwasher leaking and previous tech told us to by a new one, we decided to give it one more chance and didn’t regret. Thanks Tiffany for recommending them.</q>
           </div>
-          <p class="author">- Christina Gaber</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Christina Gaber</p>
+          </div>
         </div>
 
         <div class="mySlides">
+          <img class="icon-google" src="pictures/icon-google-trans.png">
           <div class="stars-quote">
             <img class="stars" src="pictures/starts-no-background.png">
             <q>Didn’t expect tech to show up on weekends but glad I was home. My dryer had no heat , Alex managed to fix it under an hour and its back in business, yay!</q>
           </div>
-          <p class="author">- Theresa Tree</p>
+          <div id="avatar-author-override">
+            <img class="avatar" src="pictures/icon-theresa-small.jpg">
+            <p class="author">- Theresa Tree</p>
+          </div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -294,7 +345,8 @@
     
     <img class="hero-pic1" src="pictures/kitchen7.jpg" alt="kitchenView" ></img>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 
