@@ -1,0 +1,51 @@
+.container{
+   
+    background-image:url('pictures/missionSection6.png');
+    background-repeat:no-repeat;
+    /* background-size:contain; */
+    background-position:center;
+    height: 200px;
+    box-shadow: 0 0 8px 8px #B9DFC6 inset;
+}
+
+.blog{
+    height: 100%;
+    background-color: #B9DFC6;
+}
+
+.XqbgT {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.container h1{
+font-size: xx-large;
+font-weight: 300;
+color: #F68A4C;
+}
+.container p{
+font-size: larger;
+font-weight: 300;
+color: #FFFFFF;
+}
+
+.container h6{
+font-style: italic;
+font-size: x-large;
+font-weight: 300;
+color: #F68A4C;
+}
+.polar-top-section{
+height: 100%;
+background-color: #A0D6D3;
+}
+
+.logo {
+    padding-top: 15px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 140px;
+}
