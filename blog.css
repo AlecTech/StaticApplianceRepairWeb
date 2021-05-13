@@ -1,51 +1,89 @@
-.container{
+/* .container{
    
     background-image:url('pictures/missionSection6.png');
     background-repeat:no-repeat;
-    /* background-size:contain; */
-    background-position:center;
+    background-size:contain; /* need to comment out for background picture*/
+   /* background-position:center;
     height: 200px;
     box-shadow: 0 0 8px 8px #B9DFC6 inset;
-}
+} */
 
-.blog{
+/* .blog{
     height: 100%;
     background-color: #B9DFC6;
-}
+} */
 
-.XqbgT {
+/* .XqbgT {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
-}
+} */
 
+/* Mission Text color and font size*/
 .container h1{
 font-size: xx-large;
 font-weight: 300;
-color: #F68A4C;
+color: #00918A;
 }
 .container p{
 font-size: larger;
 font-weight: 300;
-color: #FFFFFF;
+color: #000000;
 }
 
 .container h6{
 font-style: italic;
 font-size: x-large;
 font-weight: 300;
-color: #F68A4C;
-}
-.polar-top-section{
-height: 100%;
-background-color: #A0D6D3;
+color: #00918A;
 }
 
-.logo {
+/* Hero Video Background CSS Start */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Hero Video Background CSS End */
+
+
+/* NavBar with color background */
+/* .polar-top-section{
+height: 100%;
+background-color: #A0D6D3;
+} */
+
+/* .logo {
     padding-top: 15px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     height: 140px;
-}
+} */

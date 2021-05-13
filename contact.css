@@ -1,17 +1,17 @@
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
-}
+} */
 
-body, html {
+/* body, html {
     height: 100%;
     font-family: Poppins-Regular, sans-serif
-}
+} */
 
-a {
+/* a {
     font-family: Poppins-Regular;
     font-size: 14px;
     line-height: 1.7;
@@ -21,33 +21,33 @@ a {
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     -moz-transition: all .4s
-}
+} */
 
-a:focus {
+/* a:focus {
     outline: none!important
-}
+} */
 
-a:hover {
+/* a:hover {
     text-decoration: none;
     color: #F68A4C;
-}
+} */
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     margin: 0
-}
+} */
 
-p {
+/* p {
     font-family: Poppins-Regular;
     font-size: 14px;
     line-height: 1.7;
     color: #666;
     margin: 0
-}
+} */
 
-ul, li {
+/* ul, li {
     margin: 0;
     list-style-type: none
-}
+} */
 
 input {
     outline: none;

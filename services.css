@@ -1,0 +1,146 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 2px;
+    background-color: #B9DFC6;
+    padding: 10px;
+    margin: 1.5rem;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+  }
+/* space between paragraphs in each card */
+  .grid-container > div > ul > li {
+    padding: 10px;
+    font-size: large;
+  }
+  .list-heading{
+    font-weight: 700;
+  }
+  .list-text{
+    padding: 20px;
+    font-size: large;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+  }
+  .item2 img{
+    max-width: 100%;
+    height: auto;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* background-size: cover; */
+    /* width: 40vw; 
+    height: 100%; */
+    /* object-fit: cover; */
+  }
+
+  .item3 img{
+    max-width: 100%;
+    height: auto;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item4 {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+  }
+
+  .item5 {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+  }
+
+  .item6 img{
+    max-width: 100%;
+    height: auto;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item7 img{
+    max-width: 100%;
+    height: auto;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item8 {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+  }
+  .item9 {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+  }
+  .item10 img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item11 img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    /* object-fit: cover; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .item12 {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+  }
+  .item13 {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+  }
+  .item14 img{
+    max-width: 60%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .item15 img{
+    max-width: 60%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .item16 {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+  }
