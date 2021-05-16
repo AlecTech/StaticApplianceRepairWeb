@@ -15,8 +15,8 @@
   <body>
     <!-- ====Bootstrap NavBar Responsive HTML Start======= -->
     <div class="polar-top-section sticky-top">
-        <img class="logo" src="pictures/logo18.jpg" alt="logo" ></img> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="logo" src="pictures/tansLogoDone.png" alt="logo" ></img> 
+        <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,6 +47,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="contact.html"> Contact Us </a>
                     </li>
+                
                 </ul>    
             </div>
         </nav>
@@ -54,111 +55,95 @@
    
   <!-- ====Bootstrap NavBar Responsive HTML End======= -->
 <!-- =======BOOK NOW FORM START=========== -->
-    <div id="booking" class="section">
-        <div class="section-center">
-            <div class="container">
-                <div class="row">
-                    <div class="booking-form">
-                        <div class="form-header">
-                        <h1>Book a Service Call</h1>
-                        </div>
-                        <form action="mailto:eremeevoleg@gmail.com" method="GET" target="_blank">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                    <span class="form-label">Name</span>
-                                    <input class="form-control" type="text" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                    <span class="form-label">Email</span>
-                                    <input class="form-control" type="email" placeholder="Enter your email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="form-label">Phone</span>
-                                <input class="form-control" type="tel" placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group">
-                                <span class="form-label">Location</span>
-                                <input class="form-control" type="text" placeholder="Enter ZIP/Location">
-                            </div>
-                            <div class="form-group">
-                                <span class="form-label">Issue Description</span>
-                                <input class="form-control" type="textarea" placeholder="Enter your appliance Model# and Issue">
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="form-group">
-                                        <span class="form-label">Date</span>
-                                        <input class="form-control" type="date" required="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                            <span class="form-label">Hour</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                </select>
-                                            <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                            <span class="form-label">Min</span>
-                                                <select class="form-control">
-                                                    <option>05</option>
-                                                    <option>10</option>
-                                                    <option>15</option>
-                                                    <option>20</option>
-                                                    <option>25</option>
-                                                    <option>30</option>
-                                                    <option>35</option>
-                                                    <option>40</option>
-                                                    <option>45</option>
-                                                    <option>50</option>
-                                                    <option>55</option>
-                                                </select>
-                                            <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <span class="form-label">AM/PM</span>
-                                                <select class="form-control">
-                                                    <option>AM</option>
-                                                    <option>PM</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-btn">
-                                <button class="submit-btn" >Submit</button>
-                            </div>
-                        </form>
-                    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="booking" class="section">
+    <div class="section-center">
+        <div class="container">               
+            <h1>Book a Service Call</h1>
+            <div id="sendmsg">
+                <div class="field">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" value="" />
+                </div>
+                <div class="field">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" value="" />
+                </div>
+                <div class="field">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" value="" />
+                </div>
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" value="" />
+                </div>
+                <div class="field">
+                <label for="appliance">Choose appliance:</label>
+                <select id="appliance" name="appliance">
+                  <option value="washer">Washer</option>
+                  <option value="dryer">Dryer</option>
+                  <option value="dishwasher">Dishwasher</option>
+                  <option value="fridge">Refrigirator</option>
+                  <option value="electricRange">Electric Range</option>
+                  <option value="gasRange">Gas Range</option>
+                  <option value="microwave">Microwave</option>
+                </select>
+                </div>
+                <div class="field">
+                <label for="day">Date:</label>
+                <input type="date" id="day" name="day">
+                </div>
+                <div class="field">
+                    <label for="subject">Model Number of Appliance</label>
+                    <input type="text" name="subject" id="subject" value="" />
+                </div>
+                <div class="field">
+                    <label for="body">Message</label>
+                    <textarea name="body" id="body" rows="6" cols="30"></textarea>
+                </div>
+                <div class="field">
+                    <ul class="actions">
+                        <li><a id="send-email" href=""><button>Send email</button></a> </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
+</div>
+    <!-- ======BOOK NOW FORM JS LOGIC start========== -->
+ 
+    <script>
+        $(document).ready(function() {
+            //Save references to elements. Don't do DOM walks in event handlers when not needed.
+            var $sendEmailEl = $('#send-email');
+            var $subjectEl = $('#subject');
+            var $bodyEl = $('#body');
+            var $addressEl = $('#address');
+            var $fnameEl = $('#fname');
+            var $lnameEl = $('#lname');
+            var $phoneEl = $('#phone');
+            var $applianceEl = $('#appliance')
+            var $dayEl = $('#day');
+
+            function updateEmailLink() {
+                $sendEmailEl.attr('href', 'mailto:eremeevoleg@gmail.com?' + 
+                'subject=' + encodeURIComponent($subjectEl.val()) + 
+                '&body=' + encodeURIComponent($bodyEl.val()) + ' ' 
+                + encodeURIComponent($addressEl.val()) + ' ' 
+                + encodeURIComponent($fnameEl.val()) + ' ' 
+                + encodeURIComponent($lnameEl.val()) + ' ' 
+                + encodeURIComponent($phoneEl.val()) + ' ' 
+                + encodeURIComponent($applianceEl.val()) + ' '
+                + encodeURIComponent($dayEl.val())
+                );
+                // console.log($sendEmailEl.attr('href'));
+            }
+            $('#subject,#body').on('input', updateEmailLink);
+            updateEmailLink();
+        });
+    </script>
+   
+    <!-- ======Book Now Form JS Logic end============ -->
 <!-- =======BOOK NOW FORM END=========== -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
