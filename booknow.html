@@ -90,7 +90,7 @@
                 </select>
                 </div>
                 <div class="field">
-                <label for="day">Date:</label>
+                <label for="day">Preferred Date:</label>
                 <input type="date" id="day" name="day">
                 </div>
                 <div class="field">
@@ -128,12 +128,12 @@
             function updateEmailLink() {
                 $sendEmailEl.attr('href', 'mailto:eremeevoleg@gmail.com?' + 
                 'subject=' + encodeURIComponent($subjectEl.val()) + 
-                '&body=' + encodeURIComponent($bodyEl.val()) + ' ' 
-                + encodeURIComponent($addressEl.val()) + ' ' 
-                + encodeURIComponent($fnameEl.val()) + ' ' 
-                + encodeURIComponent($lnameEl.val()) + ' ' 
-                + encodeURIComponent($phoneEl.val()) + ' ' 
-                + encodeURIComponent($applianceEl.val()) + ' '
+                '&body=' + 'Hi Polar Tech' + '%0D%0A' + encodeURIComponent($bodyEl.val()) + '%0D%0A' + ' Address: ' 
+                + encodeURIComponent($addressEl.val()) + '%0D%0A' + ' First Name: ' 
+                + encodeURIComponent($fnameEl.val()) + '%0D%0A' + ' Last Name: ' 
+                + encodeURIComponent($lnameEl.val()) + '%0D%0A' + ' Phone: ' 
+                + encodeURIComponent($phoneEl.val()) + '%0D%0A' + ' Appliance: ' 
+                + encodeURIComponent($applianceEl.val()) + '%0D%0A' + ' Prefered date: '
                 + encodeURIComponent($dayEl.val())
                 );
                 // console.log($sendEmailEl.attr('href'));
