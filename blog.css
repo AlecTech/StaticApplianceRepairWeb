@@ -21,7 +21,7 @@
     padding-bottom: 5rem;
 } */
 
-/* Mission Text color and font size*/
+/* ======== Mission Text color and font size START========*/
 .container h1{
 font-size: xx-large;
 font-weight: 300;
@@ -39,8 +39,8 @@ font-size: x-large;
 font-weight: 300;
 color: #00918A;
 }
-
-/* Hero Video Background CSS Start */
+/* ======== Mission Text color and font size END========*/
+/* ======== Hero Video Background CSS Start======== */
 body{
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ body{
 
 .banner{
     width: 100%;
-    height: 40vw;
+    height: 100vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -56,8 +56,8 @@ body{
 }
 
 .banner video{
-    position: absolute;
-    top: 200px;
+    position: relative;
+    /* top: 10px; */
     left: 0;
     object-fit: cover;
     width: 100%;
@@ -65,15 +65,44 @@ body{
     pointer-events: none;
 }
 
-.banner .container {
+/* .banner .container {
     position: relative;
     z-index: 1;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-}
-/* Hero Video Background CSS End */
+} */
 
+.container{
+    /* position: absolute; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bottom: 20%; */
+    transform: translate(-50%, -50%);
+}
+/* ======== Hero Video Background CSS End ========= */
+/* ======== Blog Section with Posts Start ========= */
+
+/* .blog{
+    position: absolute;
+} */
+.blog-section{
+    position: relative;
+    padding: 5rem;
+    background-color: #B9DFC6;
+}
+.blog-post h1{
+    padding-bottom: 1rem;
+    font-size: xx-large;
+    font-style: italic;
+}
+.blog-post li{
+    font-weight: 600;
+}
+.blog-post p{
+    padding-bottom: 0.5rem;
+}
 
 /* NavBar with color background */
 /* .polar-top-section{
