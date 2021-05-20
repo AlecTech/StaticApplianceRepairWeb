@@ -63,19 +63,19 @@
             <div id="sendmsg">
                 <div class="field">
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" id="fname" value="" />
+                    <input type="text" name="fname" id="fname" value="" required/>
                 </div>
                 <div class="field">
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname" id="lname" value="" />
+                    <input type="text" name="lname" id="lname" value="" required/>
                 </div>
                 <div class="field">
                     <label for="address">Address</label>
-                    <input type="text" name="address" id="address" value="" />
+                    <input type="text" name="address" id="address" value="" required/>
                 </div>
                 <div class="field">
                     <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone" value="" />
+                    <input type="text" name="phone" id="phone" value="" required/>
                 </div>
                 <div class="field">
                 <label for="appliance">Choose appliance:</label>
@@ -124,9 +124,11 @@
             var $phoneEl = $('#phone');
             var $applianceEl = $('#appliance')
             var $dayEl = $('#day');
+            var $myEmailEl = 'gmail.com';
+            var $myEmailEncode = ('eremeevoleg' +  '@' + $myEmailEl );
 
-            function updateEmailLink() {
-                $sendEmailEl.attr('href', 'mailto:eremeevoleg@gmail.com?' + 
+            function updateEmailLink() {          
+                $sendEmailEl.attr('href', 'mailto:'+ encodeURIComponent($myEmailEncode) +'?' + 
                 'subject=' + encodeURIComponent($subjectEl.val()) + 
                 '&body=' + 'Hi Polar Tech' + '%0D%0A' + encodeURIComponent($bodyEl.val()) + '%0D%0A' + ' Address: ' 
                 + encodeURIComponent($addressEl.val()) + '%0D%0A' + ' First Name: ' 

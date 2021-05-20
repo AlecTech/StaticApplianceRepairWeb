@@ -58,7 +58,79 @@
   <!-- ====Bootstrap NavBar Responsive HTML End======= -->
 
   <!-- =======Test Contact Page Start========== -->
-  <div class="bg-contact3" style="background-image: url('pictures/contactUsBG.jpg');">
+
+<!-- =======BOOK NOW FORM START=========== -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<div id="booking" class="section">
+    <div class="section-center">
+        <div class="container">               
+            <h1>Contact Us</h1>
+            <div id="sendmsg">
+                <div class="field">
+                    <label for="fname">Name</label>
+                    <input type="text" name="fname" id="fname" value="" placeholder="First Name" />
+                </div>
+           
+          
+                <div class="field">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" value="" placeholder="Phone Number"/>
+                </div>
+     
+          
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+                </div>
+                <div class="field">
+                    <label for="body">Message</label>
+                    <textarea name="body" id="body" rows="6" cols="30"></textarea>
+                </div>
+                <div class="field">
+                    <ul class="actions">
+                        <li><a id="send-email" href=""><button>Send email</button></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+    <!-- ======BOOK NOW FORM JS LOGIC start========== -->
+ 
+    <script>
+        $(document).ready(function() {
+            //Save references to elements. Don't do DOM walks in event handlers when not needed.
+            var $sendEmailEl = $('#send-email');
+            var $subjectEl = $('#subject');
+            var $bodyEl = $('#body');
+           
+            var $fnameEl = $('#fname');
+          
+            var $phoneEl = $('#phone');
+           
+            var $myEmailEl = 'gmail.com';
+            var $myEmailEncode = ('eremeevoleg' +  '@' + $myEmailEl );
+
+            function updateEmailLink() {          
+                $sendEmailEl.attr('href', 'mailto:'+ encodeURIComponent($myEmailEncode) +'?' + 
+                'subject=' + encodeURIComponent($subjectEl.val()) + 
+                '&body=' + 'Hi Polar Tech' + '%0D%0A' 
+                + encodeURIComponent($bodyEl.val()) + '%0D%0A' + ' Name: ' 
+                + encodeURIComponent($fnameEl.val()) + '%0D%0A' + ' Phone: ' 
+                + encodeURIComponent($phoneEl.val()) 
+                );
+                // console.log($sendEmailEl.attr('href'));
+            }
+            $('#subject,#body').on('input', updateEmailLink);
+            updateEmailLink();
+        });
+    </script>
+   
+    <!-- ======Book Now Form JS Logic end============ -->
+<!-- =======BOOK NOW FORM END=========== -->
+
+
+  <!-- <div class="bg-contact3" style="background-image: url('pictures/contactUsBG.jpg');">
     <div class="container-contact3">
       <div class="wrap-contact3">
         <form class="contact3-form validate-form">
@@ -159,7 +231,7 @@
       </div>
     </div>
   </div>
-  <div id="dropDownSelect1"></div>
+  <div id="dropDownSelect1"></div> -->
 
   <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
   
