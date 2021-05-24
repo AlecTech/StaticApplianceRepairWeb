@@ -41,6 +41,21 @@
                     <li class="nav-item">
                     <a class="nav-link" href="estimates.html"> Estimates </a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" 
+                        href="location.html"> Location <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                          <a class="dropdown-item" href="location.html">Airdrie</a>
+                          <a class="dropdown-item" href="location.html">Bragg Creek</a>
+                          <a class="dropdown-item" href="location.html">Canmore</a>
+                          <a class="dropdown-item" href="location.html">Chestermere</a>
+                          <a class="dropdown-item" href="location.html">Cochrane</a>
+                          <a class="dropdown-item" href="location.html">Edmonton</a>
+                          <a class="dropdown-item" href="location.html">Okotoks</a>
+                          <a class="dropdown-item" href="location.html">Red Deer</a>
+                          <a class="dropdown-item" href="location.html">Strathmore</a> 
+                        </div>
+                    </li>
                     <li class="nav-item">
                     <a class="nav-link" href="blog.html"> Blog </a>
                     </li>
@@ -53,75 +68,79 @@
     </div>
 
     <!-- =======Dynamic Dependant Cascading Dropdown Lists start========== -->
-    <title>Dynamic Drop Down List</title>
+    <div class="container">
+        <!-- <title>Dynamic Drop Down List</title> -->
+        <div class="container-brand">
+            <label for="brand">Choose your Brand:</label>
+            <select id="brand" name="brand">
+                <option value="" >Select Brand</option>
+                <option value="1" >LG</option>
+                <option value="1" >Samsung</option>
+                <option value="1.2" >Whirlpool</option>
+                <option value="1.5" >Bosch</option>
+                <option value="1.4" >Frigidaire</option>
+                <option value="2" >GE</option>
+                <option value="1.3" >Electrolux</option>
+                <option value="1.3" >Maytag</option>
+                <option value="1.6" >Kitchen Aid</option>
+                <option value="1.2" >Kenmore</option>
+            </select>
+        </div>
+      
+    
+        <!-- <button type="button" onclick="myFunction()">Calculate</button>
+    
+        <p id="demo"></p>
+     
+        <script>
+            function myFunction() 
+            {
+                var x = document.getElementById("brand").value;        
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script> -->
+            
+           <!--    <script src="js/bootstrap.bundle.min.js"></script> -->
+    
+        <div class="category_div" id="category_div">Select your Appliance:
+            <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="">Select Appliance</option>
+                <option value="1.2">Washer</option>
+                <option value="1">Dryer</option>
+                <option value="1.5">Dishwasher</option>
+                <option value="1.4">Gas Range</option>
+                <option value="1.3">Electric Range</option>
+                <option value="1.6">Refrigirator</option>
+                <option value="1.1">Microwave</option>
+            </select>
+        </div>
 
-    <label for="brand">Choose your Brand:</label>
-    <select id="brand" name="brand">
-        <option value="" >Select Brand</option>
-        <option value="1" >LG</option>
-        <option value="1" >Samsung</option>
-        <option value="1.2" >Whirlpool</option>
-        <option value="1.5" >Bosch</option>
-        <option value="1.4" >Frigidaire</option>
-        <option value="2" >GE</option>
-        <option value="1.3" >Electrolux</option>
-        <option value="1.3" >Maytag</option>
-        <option value="1.6" >Kitchen Aid</option>
-        <option value="1.2" >Kenmore</option>
-    </select>
+        <div class="sub_category_div" id="sub_category_div">Select Issue:
+            <script type="text/javascript" language="JavaScript">
+                document.write('<select name="subcategory" id="subcategory"><option value="">Select Issue</option></select>')
+            </script>
+            <noscript>
+                <select name="subcategory" id="subcategory" >
+                    <option value="">Please select framework</option>
+                </select>
+            </noscript>
+        </div>
+    
+           <!-- <button type="button" onclick="myFunction2()">Calculate2</button>
+    
+           <p id="demo2"></p>
+    
+           <script>
+                function myFunction2() 
+            {            
+                var y = document.getElementById("subcategory").value;   
+                document.getElementById("demo2").innerHTML = y;
+            }
+            </script> -->
+    
+        <button type="button" onclick="myFunction3()">Calculate</button>
 
-    <button type="button" onclick="myFunction()">Calculate</button>
-
-    <p id="demo"></p>
- 
-    <script>
-        function myFunction() 
-        {
-            var x = document.getElementById("brand").value;        
-            document.getElementById("demo").innerHTML = x;
-        }
-    </script>
-        
-       <!--    <script src="js/bootstrap.bundle.min.js"></script> -->
-
-    <div class="category_div" id="category_div">Select your Appliance:
-        <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-            <option value="">Select Appliance</option>
-            <option value="1.2">Washer</option>
-            <option value="1">Dryer</option>
-            <option value="1.5">Dishwasher</option>
-            <option value="1.4">Gas Range</option>
-            <option value="1.3">Electric Range</option>
-            <option value="1.6">Refrigirator</option>
-            <option value="1.1">Microwave</option>
-        </select>
-    </div>
-       <div class="sub_category_div" id="sub_category_div">Select Issue:
-           <script type="text/javascript" language="JavaScript">
-               document.write('<select name="subcategory" id="subcategory"><option value="">Select Issue</option></select>')
-           </script>
-           <noscript>
-               <select name="subcategory" id="subcategory" >
-                   <option value="">Please select framework</option>
-               </select>
-           </noscript>
-       </div>
-
-       <button type="button" onclick="myFunction2()">Calculate2</button>
-
-       <p id="demo2"></p>
-
-       <script>
-            function myFunction2() 
-        {            
-            var y = document.getElementById("subcategory").value;   
-            document.getElementById("demo2").innerHTML = y;
-        }
-        </script>
-
-        <button type="button" onclick="myFunction3()">Calculate3</button>
-
-        <p id="demo3"></p>
+        <p id="demo3">Result</p>
 
         <script>
             function myFunction3() 
@@ -133,9 +152,7 @@
 
         }
         </script>
-   
-</body>
-   
+    </div>
     <script language="javascript" type="text/javascript">
 
         function dynamicdropdown(listindex)
@@ -209,6 +226,10 @@
         }
 
     </script>
+   
+</body>
+   
+    
       <!-- =======Dynamic Dependant Cascading Dropdown Lists end========== -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- </body> -->

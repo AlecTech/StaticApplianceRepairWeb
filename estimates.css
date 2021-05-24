@@ -29,3 +29,45 @@ body{
     margin: 0 auto;
     text-align: center;
 }
+/* .container{
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* justify-content: space-around;
+    justify-items: center;
+    align-content: center; */
+    align-items: center;
+    background-image: url('pictures/missionSection1.png');
+    background-position: center;
+}
+.container-brand{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    /* justify-content:baseline;
+    justify-items: baseline;
+    align-content: baseline; */
+    align-items: baseline;
+}
+.category_div{
+    padding: 1rem;
+}
+.sub_category_div{
+    padding: 1rem;
+}
+#demo3{
+    background-color:cadetblue;
+    padding: 1rem;
+    
+    /* border: cadetblue; */
+    border-radius: 5px;
+    /* border-width: 1rem; */
+}
+.container button{
+    margin: 1rem;
+}
