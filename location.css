@@ -1,0 +1,22 @@
+/* Set the size of the div element that contains the map */
+/* 1st attempt worked */
+/* #map {
+    height: 400px;
+ 
+    width: 100%;
+  
+  } */
+
+/* 3rd attempt */
+
+#map_canvas{
+border:1px solid black;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 5rem 0rem 5rem 0rem;
+}
+h1{
+    margin: 2rem;
+    font-size: xx-large;
+}
