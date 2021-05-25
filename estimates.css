@@ -44,6 +44,7 @@ body{
     align-items: center;
     background-image: url('pictures/missionSection1.png');
     background-position: center;
+    margin-top: 5rem;
 }
 .container-brand{
     display: flex;

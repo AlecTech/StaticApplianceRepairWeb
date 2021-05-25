@@ -57,16 +57,16 @@ var locations = [
     ['Calgary Office (403)973-8894', 51.120751, -114.010572, 4],
     ['Edmonton Office (403)973-8894', 53.535411, -113.507996, 5],
     ['RedDeer Office (403)973-8894', 52.269838, -113.818359, 3],
-    ['Banff Office (403)973-8894', 51.1777781, -115.5682504, 2]
-   
+    ['Banff Office (403)973-8894', 51.1777781, -115.5682504, 2],
+    ['Okotoks Office (403)973-8894', 50.72562500, -113.97065800, 1]
   ];
   var map;
   var markers = [];
   
   function init(){
     map = new google.maps.Map(document.getElementById('map_canvas'), {
-      zoom: 8,
-      center: new google.maps.LatLng(51.120751, -114.010572),
+      zoom:7,
+      center: new google.maps.LatLng(52.269838, -113.818359),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
   
