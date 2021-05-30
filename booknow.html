@@ -141,7 +141,13 @@
             var $dayEl = $('#day');
             var $myEmailEl = 'gmail.com';
             var $myEmailEncode = ('eremeevoleg' +  '@' + $myEmailEl );
+            // adding coupon function if timer still running Start
+            // var $coupon = "";
 
+            // function addCoupon() {
+
+            // }
+            // adding coupon function if timer still running End
             function updateEmailLink() {          
                 $sendEmailEl.attr('href', 'mailto:'+ encodeURIComponent($myEmailEncode) +'?' + 
                 'subject=' + encodeURIComponent($subjectEl.val()) + 

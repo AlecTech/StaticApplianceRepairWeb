@@ -69,6 +69,7 @@ table {
   position: relative;
   text-align: center;
   padding: 1rem;
+  margin-top: 65px;
 }
 
 /* crop wave gif image */
@@ -76,6 +77,7 @@ table {
   width: 30vw !important; 
   height: 80%;
   object-fit: cover;
+  
 }
 /* text outline and position */
 .text-timer-book-now-gif h2{
@@ -83,6 +85,7 @@ table {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 20px;
   /* color: #FFFFFF; */
 
   color: black;
@@ -90,7 +93,7 @@ table {
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: black;
 
-  font-size:x-large;
+  font-size: 2vw;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -98,6 +101,7 @@ table {
 .timer-button{
   font-size: 1.8rem;
   position: absolute;
+  margin-top: 20px;
   /* top: 380px;
   left: 150px;  */
 
@@ -131,6 +135,7 @@ table {
 .timer-pictures-section{
 	display: flex;
   justify-content: space-around;
+  /* margin-top: 1rem; */
   /* flex-direction: column; */
 }
 
