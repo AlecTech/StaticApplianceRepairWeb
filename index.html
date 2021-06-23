@@ -47,6 +47,7 @@
             <div class="dropdown-menu" aria-labelledby="dropdown_target">
               <a class="dropdown-item" href="location.html">Airdrie</a>
               <a class="dropdown-item" href="location.html">Bragg Creek</a>
+              <a class="dropdown-item" href="https://polartechappliance.ca/">Calgary</a>
               <a class="dropdown-item" href="location.html">Canmore</a>
               <a class="dropdown-item" href="location.html">Chestermere</a>
               <a class="dropdown-item" href="location.html">Cochrane</a>
@@ -74,23 +75,17 @@
     <!-- <div class="timer-pictures-section" style="background-color:powderblue;"> -->
     <div class="timer-pictures-section">  
       <div class="text-timer-book-now-gif">
-        <h2>Take Advantage of Our Promotion. Book Now and get a 10% discount !</h2>
+        <h2>Take Advantage of Our Promotion. Book Now and get a 15% discount !</h2>
 
         <!--=============== w3 school Timer START JS =============-->
-        <div class="timer-button">
-          <p id="timer"></p>
-          <a href="booknow.html">
-            <button class="btn btn-info" type="button" onclick="">Book Now</button>
-          </a>
-          
-        </div>
-       
+
         <script>
           // Set the date we're counting down to
-          var countDownDate = new Date("June 15, 2021 09:17:25").getTime();
+          var countDownDate = new Date("June 23, 2021 15:48:00").getTime();
           
           // Update the count down every 1 second
-          var x = setInterval(function() {
+          var x = setInterval(function() 
+          {
           
             // Get today's date and time
             var now = new Date().getTime();
@@ -108,13 +103,32 @@
             document.getElementById("timer").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s " + "Discount 15%";
               
-            // If the count down is over, write some text 
+            // If the count down is over, write Expired text 
             if (distance < 0) {
               clearInterval(x);
               document.getElementById("timer").innerHTML = "EXPIRED";
             }
+            //===if timer still running then redirect to discount page (distance more than zero) Start ===
+            let link;
+            // add event listener to the button and check "if timer running" condition
+            document.getElementById("but").addEventListener("click", function() {
+              if (distance <= 0) {
+                link = "booknow.html";
+              } else {
+                link = "booknowcode.html";
+              }
+              document.querySelector("#conditional-button a").href = link;
+            })
+            //===if timer still running then redirect to discount page (distance more than zero) End ===
           }, 1000);
-          </script>
+        </script>
+          <!-- ===== Conditional Book Now Button start======== -->
+        <div class="timer-button" id="conditional-button">
+          <p id="timer"></p>
+          <a class="btn btn-info" id="but" type="button">Book Now</a>
+        </div>
+          <!-- ===== Conditional Book Now Button end======== -->
+
           <!--=============== w3 school Timer END JS =============-->
 
           <img src="pictures/wave.gif" style="width:100%">
@@ -357,7 +371,10 @@
           </script>
         <!--============== w3 school Testimonial slider script END JS ==========-->
 
-    </div>
+    <!-- </div>
+    <a href="booknowcode.html">
+      <button class="btn btn-info" type="button" onclick="">Book Now Code</button>
+    </a> -->
     
     <img class="hero-pic1" src="pictures/kitchen7.jpg" alt="kitchenView" ></img>
 
