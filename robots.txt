@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /blog
+Allow: /booknow
+Allow: /booknowcode
+Allow: /estimates
+Allow: /index
+Allow: /location
+Allow: /services
+Allow: /contact
+
+Sitemap: https://errorcodeappliancerepair.ca/sitemap.xml
